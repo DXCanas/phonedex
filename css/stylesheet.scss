@@ -1,0 +1,189 @@
+/**
+* Variables
+**/
+// $primary-color: #333;
+$font-Fredoka: 'Fredoka One', cursive;
+$font-Lobster: 'Lobster', cursive;
+$font-Yanone: 'Yanone Kaffeesatz', sans-serif;
+
+// http://www.dtelepathy.com/blog/inspiration/beautiful-color-palettes-for-your-next-web-project
+// Colors: magme
+$magme-1: #F17D80;
+$magme-2: #737495;
+$magme-3: #68A8AD;
+$magme-4: #C4D4AF;
+$magme-5: #6C8672;
+
+// Colors: hartwig
+$hartwig-1: #E8A0B8;
+$hartwig-2: #FFC300;
+$hartwig-3: #BCCF3D;
+$hartwig-4: #02C9C9;
+$hartwig-5: #333333;
+
+// Custom colors
+$subtle-grey: #999999;
+$logo-color: #83BF17;
+$logo-hover: #A2E524;
+$android-red: #CD1719;
+$ios-blue: #0B99BC;
+
+// Other
+$box-shadow: 4px 4px 1px $subtle-grey;
+$border-default: 1px solid $hartwig-5;
+
+body {
+    background-image: url('../img/subtle_patterns/cream_pixels.png');   
+}
+
+/**
+* Nav-bar
+**/
+#nav {
+    
+    margin-bottom: 20px;
+    
+    #logo {
+        
+        height: 100%;
+        background-color: $logo-color;
+        box-shadow: $box-shadow;
+        max-height: 40px;
+        margin-top: 20px;
+        
+        h2 {
+            font-family: $font-Yanone;
+            color: white;
+            margin-top: -10px;
+        }
+        
+        a {
+            width: 100%;
+            display: block;
+        }
+    }
+    
+    #logo:hover {
+        
+        background-color: $logo-hover;
+    }
+    
+    #nav-links {
+    
+        background-color: $hartwig-5;
+        //border: 1px solid $hartwig-5;
+        box-shadow: $box-shadow;
+        
+        a {
+            font-family: $font-Yanone;
+            font-size: 200%;
+            color: white;
+            
+            width: 100%;
+            display: block;
+        }
+        
+        #nav-link-1 {
+            a { 
+                color: $hartwig-2;
+            }
+        }
+        
+        #nav-link-1:hover {
+            background-color: $hartwig-2;
+            a { 
+                color: white;
+            }
+        }
+        
+        #nav-link-2 {
+            a { 
+                color: $hartwig-1;
+            }
+        }
+        
+        #nav-link-2:hover {
+            background-color: $hartwig-1;
+            a { 
+                color: white;
+            }
+        }
+        
+        #nav-link-3 {
+            a { 
+                color: $hartwig-3;
+            }
+        }
+        
+        #nav-link-3:hover {
+            background-color: $hartwig-3;
+            a { 
+                color: white;
+            }
+        }
+        
+        #nav-link-4 {
+            a { 
+                color: $hartwig-4;
+            }
+        }
+        
+        #nav-link-4:hover {
+            background-color: $hartwig-4;
+            a { 
+                color: white;
+            }
+        }
+    }
+    
+    #nav-trending {
+        box-shadow: $box-shadow;
+        border: 1px solid $hartwig-5;
+        background-color: white;
+        min-height: 26px;
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+} // END Nav-bar
+
+/**
+* Home Page Body
+**/
+#index-body {
+    
+    min-height: 500px;
+    background-color: white;
+    box-shadow: $box-shadow;
+    border: $border-default;
+    
+    .tabs {
+        dd {
+            padding: 0;
+        }
+    }
+    
+    .tabs-content .content {
+        
+        padding-left: 10px;
+        font-family: $font-Yanone;
+        
+        #title {
+            
+        }
+    }
+    
+} // END Home Page Body
+
+// When mouse hovers over the text, the cursor doesn't change.
+.noIbar {
+    cursor:default;
+}
+
+li, p, dd {
+    font-family: $font-Yanone;
+    color: $hartwig-5;
+}

@@ -21,10 +21,20 @@ $hartwig-3: #BCCF3D; // light green
 $hartwig-4: #02C9C9; // teal
 $hartwig-5: #333333; // blackish
 
+$hartwig-2-hover: #FFCF33;
+$hartwig-4-hover: #02DEDE;
+
+
 // Custom colors
 $subtle-grey: #999999;
 $logo-color: #83BF17;
 $logo-hover: #A2E524;
+
+$help-red: #DC2742;
+$help-red-hover: #E03E56;
+$tip-us-blue: #3A9AD9;
+$tip-us-blue-hover: #65B0E2;
+
 $android-red: #CD1719;
 $ios-blue: #0B99BC;
 
@@ -49,7 +59,7 @@ body {
         background-color: $logo-color;
         box-shadow: $box-shadow;
         max-height: 40px;
-        margin-top: 20px;
+        margin-top: 25px;
         
         h2 {
             font-family: $font-Yanone;
@@ -61,6 +71,60 @@ body {
     #logo:hover {
         
         background-color: $logo-hover;
+    }
+    
+    #search-nav-tab {
+        
+        margin-top: 41px;
+        background-color: $hartwig-2;
+        box-shadow: $box-shadow;
+        margin-left: 7px;
+        
+        i {
+            font-size: 80%;   
+        }
+        
+        a {
+            color: white;
+        }
+    }
+    
+    #search-nav-tab:hover {
+        
+        background-color: $hartwig-2-hover;
+    }
+    
+    #login-nav-tab {
+        
+        @extend #search-nav-tab;
+        background-color: $hartwig-4;
+    }
+    
+    #login-nav-tab:hover {
+        
+        background-color: $hartwig-4-hover;
+    }
+    
+    #tip-us-nav-tab {
+        
+        @extend #search-nav-tab;
+        background-color: $tip-us-blue;
+    }
+    
+    #tip-us-nav-tab:hover {
+        
+        background-color: $tip-us-blue-hover;
+    }
+    
+    #help-nav-tab {
+        
+        @extend #search-nav-tab;
+        background-color: $help-red;
+    }
+    
+    #help-nav-tab:hover {
+        
+        background-color: $help-red-hover;
     }
     
     #nav-links {
@@ -151,6 +215,7 @@ body {
     box-shadow: $box-shadow;
     border: $border-default;
     
+    // more .tabs css are implemented in foundation.css
     .tabs {
         dd {
             padding: 0;
@@ -173,6 +238,7 @@ body {
 **/
 #footer {
     
+    margin-top: -1px;
     border: $border-default;
     box-shadow: $box-shadow;
     background-color: $hartwig-5;
@@ -183,7 +249,6 @@ body {
         background-color: $logo-color;
         
         a {
-            
             color: white;
             padding: 5px 0px 5px 0px;
         }

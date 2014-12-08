@@ -8,18 +8,18 @@ $font-Yanone: 'Yanone Kaffeesatz', sans-serif;
 
 // http://www.dtelepathy.com/blog/inspiration/beautiful-color-palettes-for-your-next-web-project
 // Colors: magme
-$magme-1: #F17D80;
-$magme-2: #737495;
-$magme-3: #68A8AD;
-$magme-4: #C4D4AF;
-$magme-5: #6C8672;
+$magme-1: #F17D80; // pinkish red
+$magme-2: #737495; // blue-purple
+$magme-3: #68A8AD; // tealish
+$magme-4: #C4D4AF; // dark yellowish
+$magme-5: #6C8672; // dark greenish
 
 // Colors: hartwig
-$hartwig-1: #E8A0B8;
-$hartwig-2: #FFC300;
-$hartwig-3: #BCCF3D;
-$hartwig-4: #02C9C9;
-$hartwig-5: #333333;
+$hartwig-1: #E8A0B8; // pink
+$hartwig-2: #FFC300; // light orange
+$hartwig-3: #BCCF3D; // light green
+$hartwig-4: #02C9C9; // teal
+$hartwig-5: #333333; // blackish
 
 // Custom colors
 $subtle-grey: #999999;
@@ -56,11 +56,6 @@ body {
             color: white;
             margin-top: -10px;
         }
-        
-        a {
-            width: 100%;
-            display: block;
-        }
     }
     
     #logo:hover {
@@ -75,12 +70,8 @@ body {
         box-shadow: $box-shadow;
         
         a {
-            font-family: $font-Yanone;
             font-size: 200%;
             color: white;
-            
-            width: 100%;
-            display: block;
         }
         
         #nav-link-1 {
@@ -155,7 +146,7 @@ body {
 **/
 #index-body {
     
-    min-height: 500px;
+    min-height: 800px;
     background-color: white;
     box-shadow: $box-shadow;
     border: $border-default;
@@ -169,7 +160,6 @@ body {
     .tabs-content .content {
         
         padding-left: 10px;
-        font-family: $font-Yanone;
         
         #title {
             
@@ -178,12 +168,78 @@ body {
     
 } // END Home Page Body
 
+/**
+* Home Page Body
+**/
+#footer {
+    
+    border: $border-default;
+    box-shadow: $box-shadow;
+    background-color: $hartwig-5;
+    padding: 5px 0px 5px 5px;
+    
+    #back-to-top {
+        
+        background-color: $logo-color;
+        
+        a {
+            
+            color: white;
+            padding: 5px 0px 5px 0px;
+        }
+    }
+    
+    #back-to-top:hover {
+        background-color: $logo-hover;
+    }
+    
+    .footer-title {
+        color: white;
+        font-size: 140%;
+        font-style: italic;
+        @extend .noIbar;
+    }
+    
+    #footer-logo {
+        font-family: $font-Yanone;
+        color: white;
+        @extend .noIbar;
+    }
+    
+    .footer-links {
+        font-family: $font-Yanone;
+        
+        a {
+            color: grey;
+        }
+        
+        a:hover {
+            color: white;   
+        }
+    }
+    
+} // END Footer
+
+// Styles first letter all h2's (logo title)
+h2::first-letter {
+    
+}
+
 // When mouse hovers over the text, the cursor doesn't change.
 .noIbar {
     cursor:default;
 }
 
+// Make a link fill the whole div
+.a-fill-div {
+    width: 100%;
+    display: block;
+}
+
 li, p, dd {
-    font-family: $font-Yanone;
     color: $hartwig-5;
+}
+
+* {
+    font-family: $font-Yanone;   
 }

@@ -7,7 +7,7 @@ $font-Lobster: 'Lobster', cursive;
 $font-Yanone: 'Yanone Kaffeesatz', sans-serif;
 
 // http://www.dtelepathy.com/blog/inspiration/beautiful-color-palettes-for-your-next-web-project
-// Colors: magme
+// Colors: magme (unused)
 $magme-1: #F17D80; // pinkish red
 $magme-2: #737495; // blue-purple
 $magme-3: #68A8AD; // tealish
@@ -27,11 +27,12 @@ $hartwig-4-hover: #02DEDE;
 
 // Custom colors
 $subtle-grey: #999999;
+$light-grey: #CCCCCC;
 $logo-color: #83BF17;
 $logo-hover: #A2E524;
 
 $help-red: #DC2742;
-$help-red-hover: #E03E56;
+$help-red-hover: #E25066;
 $tip-us-blue: #3A9AD9;
 $tip-us-blue-hover: #65B0E2;
 
@@ -208,6 +209,33 @@ body {
 /**
 * Home Page Body
 **/
+#body-title {
+        
+    background-color: $hartwig-3;
+    box-shadow: 4px 4px 1px $subtle-grey;
+    z-index: -1; // Puts box-shadow behind the body box
+    
+    h2 {
+        
+        color: white;
+        font-family: $font-Yanone;
+    }
+}
+
+#body-subtitle {
+    
+    background-color: $light-grey;
+    box-shadow: 4px 4px 1px $subtle-grey;
+    z-index: -1; // Puts box-shadow behind the body box
+    margin-top: 19px;
+    
+    h4 {
+        
+        color: white;
+        font-family: $font-Yanone;
+    }
+}
+
 #index-body {
     
     min-height: 800px;
@@ -217,6 +245,7 @@ body {
     
     // more .tabs css are implemented in foundation.css
     .tabs {
+        
         dd {
             padding: 0;
         }
@@ -225,20 +254,17 @@ body {
     .tabs-content .content {
         
         padding-left: 10px;
-        
-        #title {
-            
-        }
     }
     
 } // END Home Page Body
 
 /**
-* Home Page Body
+* Footer
 **/
 #footer {
     
     margin-top: -1px;
+    margin-bottom: 30px;
     border: $border-default;
     box-shadow: $box-shadow;
     background-color: $hartwig-5;

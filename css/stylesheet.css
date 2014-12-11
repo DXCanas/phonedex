@@ -19,7 +19,7 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #nav #tip-us-nav-tab { background-color: #3A9AD9; }
 #nav #tip-us-nav-tab:hover { background-color: #65B0E2; }
 #nav #help-nav-tab { background-color: #DC2742; }
-#nav #help-nav-tab:hover { background-color: #E03E56; }
+#nav #help-nav-tab:hover { background-color: #E25066; }
 #nav #nav-links { background-color: #333333; box-shadow: 4px 4px 1px #999999; }
 #nav #nav-links a { font-size: 200%; color: white; }
 #nav #nav-links #nav-link-1 a { color: #FFC300; }
@@ -40,14 +40,20 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 /**
 * Home Page Body
 **/
+#body-title { background-color: #BCCF3D; box-shadow: 4px 4px 1px #999999; z-index: -1; }
+#body-title h2 { color: white; font-family: "Yanone Kaffeesatz", sans-serif; }
+
+#body-subtitle { background-color: #CCCCCC; box-shadow: 4px 4px 1px #999999; z-index: -1; margin-top: 19px; }
+#body-subtitle h4 { color: white; font-family: "Yanone Kaffeesatz", sans-serif; }
+
 #index-body { min-height: 800px; background-color: white; box-shadow: 4px 4px 1px #999999; border: 1px solid #333333; }
 #index-body .tabs dd { padding: 0; }
 #index-body .tabs-content .content { padding-left: 10px; }
 
 /**
-* Home Page Body
+* Footer
 **/
-#footer { margin-top: -1px; border: 1px solid #333333; box-shadow: 4px 4px 1px #999999; background-color: #333333; padding: 5px 0px 5px 5px; }
+#footer { margin-top: -1px; margin-bottom: 30px; border: 1px solid #333333; box-shadow: 4px 4px 1px #999999; background-color: #333333; padding: 5px 0px 5px 5px; }
 #footer #back-to-top { background-color: #83BF17; }
 #footer #back-to-top a { color: white; padding: 5px 0px 5px 0px; }
 #footer #back-to-top:hover { background-color: #A2E524; }

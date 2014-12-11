@@ -7,16 +7,18 @@
     <meta name="Author" content="Peter Yao, Jen Nguyen, David Canas" />
     <!-- meta viewport ensures proper mobile rendering" -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Subpages need to change directories, different from index.html -->
-    <link rel="stylesheet" href="../css/foundation.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <script src="../js/vendor/modernizr.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <!-- Subpages need to change directories, different from index.html -->
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../js/jquery-ui-slider-pips/jquery-ui-slider-pips.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
 </head>
 
 <body>
@@ -96,7 +98,7 @@
     </div>
     <div class="row collapse" id="index-body">
         <div class="row collapse">
-            
+            <div id="slider1"></div>
         </div>
     </div>
 <!--
@@ -160,10 +162,13 @@
     END FOOTER
 -->
 
+    <script src="../js/vendor/modernizr.js"></script>
     <script src="../js/vendor/jquery.js"></script>
+    <script src="//code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
     <script src="../js/vendor/jquery.newsTicker.js"></script>
     <script src="../js/foundation.min.js"></script>
     <script src="../js/vendor/fastclick.js"></script>
+    <script src="../js/jquery-ui-slider-pips/jquery-ui-slider-pips.min.js"></script>
     <script>
         /*
         $(document).ready(function () {
@@ -175,6 +180,22 @@
             });
         });*/
         
+        $('.newsticker').newsTicker({
+            row_height: 8,
+            max_row: 1,
+            direction: 'down',
+            speed: 50,
+            duration: 4500
+        });
+        
+        var $slider1 = $("#slider1").slider({
+            max: 20,
+            value: 10
+        });
+        
+        $slider1.slider("pips");
+        
+        $(document).foundation();
         
         $(document).ready(function () {
             $(window).scroll(function () {
@@ -191,16 +212,6 @@
                 return false;
             });
         });
-        
-        $('.newsticker').newsTicker({
-            row_height: 8,
-            max_row: 1,
-            direction: 'down',
-            speed: 50,
-            duration: 4500
-        });
-        
-        $(document).foundation();
         
     </script>
 </body>

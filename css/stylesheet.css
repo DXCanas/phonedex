@@ -41,9 +41,9 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 * Home Page Body
 **/
 #body-title { background-color: #BCCF3D; box-shadow: 4px 4px 1px #999999; z-index: -1; }
-#body-title h2 { color: white; font-family: "Yanone Kaffeesatz", sans-serif; }
+#body-title h3 { color: white; font-family: "Yanone Kaffeesatz", sans-serif; }
 
-#body-subtitle { background-color: #CCCCCC; box-shadow: 4px 4px 1px #999999; z-index: -1; margin-top: 19px; }
+#body-subtitle { background-color: #CCCCCC; box-shadow: 4px 4px 1px #999999; z-index: -1; margin-top: 5px; }
 #body-subtitle h4 { color: white; font-family: "Yanone Kaffeesatz", sans-serif; }
 
 #index-body { min-height: 800px; background-color: white; box-shadow: 4px 4px 1px #999999; border: 1px solid #333333; }

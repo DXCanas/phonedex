@@ -9,6 +9,7 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #nav { margin-bottom: 20px; }
 #nav #logo { height: 100%; background-color: #83BF17; box-shadow: 4px 4px 1px #999999; max-height: 40px; margin-top: 25px; }
 #nav #logo h2 { font-family: "Yanone Kaffeesatz", sans-serif; color: white; margin-top: -10px; }
+#nav #logo img { position: relative; left: -6px; top: -8px; }
 #nav #logo:hover { background-color: #A2E524; }
 #nav #search-nav-tab, #nav #login-nav-tab, #nav #tip-us-nav-tab, #nav #help-nav-tab { margin-top: 41px; background-color: #FFC300; box-shadow: 4px 4px 1px #999999; margin-left: 7px; }
 #nav #search-nav-tab i, #nav #login-nav-tab i, #nav #tip-us-nav-tab i, #nav #help-nav-tab i { font-size: 80%; }

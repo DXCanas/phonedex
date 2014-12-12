@@ -39,6 +39,14 @@ $tip-us-blue-hover: #65B0E2;
 $android-red: #CD1719;
 $ios-blue: #0B99BC;
 
+//Wizard Specific Custom Colors
+$color-android : #99CC00;
+$color-android-hover : #7AA300;
+$color-apple : #8E8E93;
+$color-apple-hover : #78787D;
+$color-question : #FF4444;
+$color-question-hover : #E00000;
+
 // Other
 $box-shadow: 4px 4px 1px $subtle-grey;
 $border-default: 1px solid $hartwig-5;
@@ -210,6 +218,72 @@ body {
             list-style: none;
         }
     }
+    
+    .drop {
+        
+        box-shadow: $box-shadow;
+        
+        .dropdown-all {
+            
+            background-color: $color-question;
+            a { color: white; padding: 5px 0px 5px 0px; font-size: 120%; }
+        }
+        
+        .dropdown-all:hover { background-color: $color-question-hover; }
+        
+        .dropdown-android {
+            
+            background-color: $color-android;
+            a { color: white; padding: 5px 0px 5px 0px; font-size: 120%; }
+        }
+        
+        .dropdown-android:hover { background-color: $color-android-hover; }
+        
+        .dropdown-ios {
+            
+            background-color: $color-apple;
+            a { color: white; padding: 5px 0px 5px 0px; font-size: 120%; }
+        }
+        
+        .dropdown-ios:hover { background-color: $color-apple-hover; }
+        
+        .news-dropdown-header {
+            
+            font-size: 140%;
+        }
+        
+        .dropdown-title {
+            
+            font-size: 160%;
+        }
+        
+        .dropdown-item {
+            
+            font-size: 120%;
+        }
+        
+        .panel {
+            
+            padding-left: 15px;
+            padding-right: 15px;
+            
+            hr {
+                
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+            
+            img {
+                margin-bottom: 5px;   
+            }
+        }
+    }
+    
+    #reviews-drop {
+        
+        max-width: 750px;
+        box-shadow: $box-shadow;
+    }
 } // END Nav-bar
 
 /**
@@ -261,6 +335,79 @@ body {
         
         padding-left: 10px;
     }
+    
+// wizard.html Specific
+    .slider-title {
+        
+        margin-bottom: 0.5em;
+        font-size: 200%;
+        background-color: $hartwig-5;
+        color: white;
+    }
+    
+    .slider-icons {
+        
+        font-size: 175%;
+        
+        #question-icon {
+            
+            color: $color-question;
+        }
+    }
+    
+    #os-slider {
+        
+        background-color: $color-question;    
+    }
+    
+    #camera-slider {
+        background-color: $color-apple;   
+    }
+    
+    .slider-info {
+        
+        font-size: 300%;
+        
+        #dont-care-icon {
+            color: $color-apple;
+        }
+    }
+    
+    .slider-showcase {
+        
+        margin-top: -1em;
+        margin-bottom: 3em;
+        padding: 3em 4em 2em;
+    }
+    
+    .wizard-button {
+        
+        margin-right: 5px;
+        font-family: $font-Yanone;
+    }
+// END wizard.html Specific
+// wizard-result.html Specific
+    .wizard-result-row {
+        
+        .panel {
+            margin-bottom: 0px;   
+        }
+        
+        .title {
+            font-family: $font-Yanone; 
+        }
+        
+        img {
+            margin-top: 20px;   
+        }
+        
+        .wizard-result-phone-title {
+            
+            font-size: 150%;
+        }
+    }
+    
+// END wizard-result.html Specific
     
 } // END Home Page Body
 
@@ -325,6 +472,10 @@ h2::first-letter {
 // When mouse hovers over the text, the cursor doesn't change.
 .noIbar {
     cursor:default;
+}
+
+.cursor-pointer {
+    cursor: pointer;   
 }
 
 // Make a link fill the whole div

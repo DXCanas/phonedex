@@ -37,6 +37,23 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #nav #nav-links #nav-link-4:hover a { color: white; }
 #nav #nav-trending { box-shadow: 4px 4px 1px #999999; border: 1px solid #333333; background-color: white; min-height: 26px; }
 #nav #nav-trending ul { margin: 0; padding: 0; list-style: none; }
+#nav .drop { box-shadow: 4px 4px 1px #999999; }
+#nav .drop .dropdown-all { background-color: #FF4444; }
+#nav .drop .dropdown-all a { color: white; padding: 5px 0px 5px 0px; font-size: 120%; }
+#nav .drop .dropdown-all:hover { background-color: #E00000; }
+#nav .drop .dropdown-android { background-color: #99CC00; }
+#nav .drop .dropdown-android a { color: white; padding: 5px 0px 5px 0px; font-size: 120%; }
+#nav .drop .dropdown-android:hover { background-color: #7AA300; }
+#nav .drop .dropdown-ios { background-color: #8E8E93; }
+#nav .drop .dropdown-ios a { color: white; padding: 5px 0px 5px 0px; font-size: 120%; }
+#nav .drop .dropdown-ios:hover { background-color: #78787D; }
+#nav .drop .news-dropdown-header { font-size: 140%; }
+#nav .drop .dropdown-title { font-size: 160%; }
+#nav .drop .dropdown-item { font-size: 120%; }
+#nav .drop .panel { padding-left: 15px; padding-right: 15px; }
+#nav .drop .panel hr { margin-top: 5px; margin-bottom: 10px; }
+#nav .drop .panel img { margin-bottom: 5px; }
+#nav #reviews-drop { max-width: 750px; box-shadow: 4px 4px 1px #999999; }
 
 /**
 * Home Page Body
@@ -50,6 +67,19 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #index-body { min-height: 800px; background-color: white; box-shadow: 4px 4px 1px #999999; border: 1px solid #333333; }
 #index-body .tabs dd { padding: 0; }
 #index-body .tabs-content .content { padding-left: 10px; }
+#index-body .slider-title { margin-bottom: 0.5em; font-size: 200%; background-color: #333333; color: white; }
+#index-body .slider-icons { font-size: 175%; }
+#index-body .slider-icons #question-icon { color: #FF4444; }
+#index-body #os-slider { background-color: #FF4444; }
+#index-body #camera-slider { background-color: #8E8E93; }
+#index-body .slider-info { font-size: 300%; }
+#index-body .slider-info #dont-care-icon { color: #8E8E93; }
+#index-body .slider-showcase { margin-top: -1em; margin-bottom: 3em; padding: 3em 4em 2em; }
+#index-body .wizard-button { margin-right: 5px; font-family: "Yanone Kaffeesatz", sans-serif; }
+#index-body .wizard-result-row .panel { margin-bottom: 0px; }
+#index-body .wizard-result-row .title { font-family: "Yanone Kaffeesatz", sans-serif; }
+#index-body .wizard-result-row img { margin-top: 20px; }
+#index-body .wizard-result-row .wizard-result-phone-title { font-size: 150%; }
 
 /**
 * Footer
@@ -65,6 +95,8 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #footer .footer-links a:hover { color: white; }
 
 .noIbar, #footer .footer-title, #footer #footer-logo { cursor: default; }
+
+.cursor-pointer { cursor: pointer; }
 
 .a-fill-div { width: 100%; display: block; }
 

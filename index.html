@@ -26,10 +26,14 @@
     <div id="nav">
         <!-- Logo -->
         <div class="row collapse text-center">
+<<<<<<< HEAD
             <div class="small-2 large-2 large-offset-1 columns" id="logo">
+=======
+            <div class="small-2 large-2 large-offset-0 columns" id="logo">
+>>>>>>> origin/master
                 <img src="img/Phonedex%20Logo.png" alt="Phonedex Logo">
             </div>
-            <div class="small-2 small-offset-1 large-1 large-offset-3 columns" id="search-nav-tab"><a href="#" class="a-fill-div">search &nbsp;&nbsp;<i class="fa fa-search"></i></a></div>
+            <div class="small-2 small-offset-1 large-1 large-offset-5 columns" id="search-nav-tab"><a href="#" class="a-fill-div">search &nbsp;&nbsp;<i class="fa fa-search"></i></a></div>
             <div class="small-2 large-1 columns" id="login-nav-tab"><a href="#" class="a-fill-div">login &nbsp;&nbsp;<i class="fa fa-user"></i></a></div>
             <div class="small-2 large-1 columns" id="tip-us-nav-tab"><a href="#" class="a-fill-div">tip us &nbsp;&nbsp;<i class="fa fa-exclamation"></i></a></div>
             <div class="small-2 large-1 columns end" id="help-nav-tab"><a href="#" class="a-fill-div">need help &nbsp;&nbsp;<i class="fa fa-question"></i></a></div>
@@ -39,28 +43,103 @@
         <div class="row">
             <!-- Dropdowns -->
             <div class="row collapse">
-                <div class="small-12 large-10 small-centered columns text-center" id="nav-links">
+                <div class="small-12 large-12 small-centered columns text-center" id="nav-links">
                     <div class="row collapse">
                         <div class="small-3 columns" id="nav-link-1">
-                            <a class="a-fill-div" href="#">News <i class="fa fa-caret-down"></i></a>
+                            <a class="a-fill-div darken" href="#" data-dropdown="news-drop" data-options="align:bottom" aria-controls="news-drop" aria-expanded="false">*News <i class="fa fa-caret-down"></i></a>
                         </div>
                         <div class="small-3 columns" id="nav-link-2">
-                            <a class="a-fill-div" href="#">Reviews <i class="fa fa-caret-down"></i></a>
+                            <a class="a-fill-div darken" href="#" data-dropdown="reviews-drop" data-options="align:bottom" aria-controls="reviews-drop" aria-expanded="false">*Reviews <i class="fa fa-caret-down"></i></a>
                         </div>
                         <div class="small-3 columns" id="nav-link-3">
-                            <a class="a-fill-div" href="#">Wizard <i class="fa fa-caret-down"></i></a>
+                            <a class="a-fill-div" href="wizard.html">*Wizard</a>
                         </div>
                         <div class="small-3 columns" id="nav-link-4">
-                            <a class="a-fill-div" href="#">Forums <i class="fa fa-caret-down"></i></a>
+                            <a class="a-fill-div" href="#">Forums</a>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- News Dropdown -->
+            <div id="news-drop" data-dropdown-content class="f-dropdown content large drop" aria-hidden="true" tabindex="-1">
+                <div class="row collapse">
+                    <div class="small-4 columns text-center dropdown-all">
+                        <a href="#" class="a-fill-div">All News</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-android">
+                        <a href="#" class="a-fill-div"><i class="fa fa-android"></i> Android News</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-ios">
+                        <a href="#" class="a-fill-div"><i class="fa fa-apple"></i> iOS News</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row collapse" data-equalizer>
+                    <div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">First News Item</span>
+                        <hr>
+                        <img src="img/Phonedex%20Logo.png">
+                        <span class="dropdown-item">This is a news item.</span>
+                    </div>
+                    <div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">Second News Item</span>
+                        <hr>
+                        <img src="img/Phonedex%20Logo.png">
+                        <span class="dropdown-item">This is a news item.</span>
+                    </div>
+                    <div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">Third News Item</span>
+                        <hr>
+                        <img src="img/Phonedex%20Logo.png">
+                        <span class="dropdown-item">This is a news item.</span>
+                    </div>
+                </div>
+            </div>
+            <!-- End News Dropdown -->
+            
+            <!-- Reviews Dropdown -->
+            <div id="reviews-drop" data-dropdown-content class="f-dropdown content large drop" aria-hidden="true" tabindex="-1">
+                <div class="row collapse">
+                    <div class="small-4 columns text-center dropdown-all">
+                        <a href="#" class="a-fill-div">All Reviews</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-android">
+                        <a href="#" class="a-fill-div"><i class="fa fa-android"></i> Android Reviews</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-ios">
+                        <a href="#" class="a-fill-div"><i class="fa fa-apple"></i> iOS Reviews</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row collapse" data-equalizer>
+                    <div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">First Review Item</span>
+                        <hr>
+                        <img src="img/Phonedex%20Logo.png">
+                        <span class="dropdown-item">This is a Review item.</span>
+                    </div>
+                    <div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">Second Review Item</span>
+                        <hr>
+                        <img src="img/Phonedex%20Logo.png">
+                        <span class="dropdown-item">This is a Review item.</span>
+                    </div>
+                    <div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">Third Review Item</span>
+                        <hr>
+                        <img src="img/Phonedex%20Logo.png">
+                        <span class="dropdown-item">This is a Review item.</span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Reviews Dropdown -->
+            
             <!-- End Dropdowns -->
 
             <!-- Trending -->
             <div class="row collapse">
-                <div class="small-12 large-10 small-centered columns text-center" id="nav-trending">
+                <div class="small-12 large-12 small-centered columns text-center" id="nav-trending">
                     <ul class="newsticker">
                         <li>
                             Trending: 

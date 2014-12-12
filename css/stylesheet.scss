@@ -67,7 +67,7 @@ body {
         height: 100%;
         background-color: $logo-color;
         box-shadow: $box-shadow;
-        max-height: 40px;
+        max-height: 39px;
         margin-top: 25px;
         
         h2 {
@@ -322,6 +322,134 @@ body {
     background-color: white;
     box-shadow: $box-shadow;
     border: $border-default;
+    
+    /**Android body**/
+    .pony1 {
+        
+      height:450px;
+      width:100%;
+    }
+    
+    #image1 {
+        
+      position:relative;
+      width:65%;
+      border:.14px gray solid;
+      padding:5px;
+    }
+
+    #box1 {
+        
+      top:280px;
+    }
+
+    #box2 {
+        
+      height:50px;
+    }
+    
+    #image2 {
+
+    }
+    
+    img:hover {
+        
+        opacity: 0.7;
+    }
+
+    #pony2 {
+        
+        position:absolute;
+        top:100px;
+        left:15px;
+        width:90%;
+        background:rgba(0,0,0,0.7);
+    }
+
+    h2 #pony3 {
+        
+        position:absolute;
+        top:00px;
+    }
+    #image3 {
+        
+        padding-right:50px;
+    }
+
+    .tiny {
+        
+        font-size: 30px;
+    }
+    
+    .black-box {
+        
+        position: absolute;
+        top: 330px;
+        left: 0px;
+        width: 90%;
+        height: 100px;
+        background: rgba(0,0,0,0.7);
+        padding-left: 10px;
+        
+        color: white;
+        letter-spacing: -1px;
+    }
+    
+    .black-box-tiny {
+        
+        @extend .black-box;
+        height: 50px;
+    }
+    
+    #black-box-nexus6 {
+        
+        top: 251px;
+        left: 15px;
+    }
+    
+    #black-box-windows {
+        
+        left: 15px;
+        top: 115px;
+    }
+    
+    #black-box-edge {
+        
+        left: 15px;
+        top: 300px;
+    }
+    
+    #index-two-stack {
+                
+        img {
+            
+            margin-bottom: 11px;
+        }
+    }
+    
+    .index-large-title {
+        
+        font-size: 200%;
+    }
+    
+    .index-subtitle {
+        font-size: 180%;
+    }
+    
+    h2  {
+        
+        
+    }
+
+    h2 span {
+        
+        color: white;
+        letter-spacing: -1px;
+        
+        /*fallback color*/
+        padding: 10px;
+    }
+    // End Android Body
     
     // more .tabs css are implemented in foundation.css
     .tabs {

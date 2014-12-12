@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="owl-carousel/owl.theme.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
@@ -27,7 +29,7 @@
         <!-- Logo -->
         <div class="row collapse text-center">
             <div class="small-2 large-2 large-offset-0 columns" id="logo">
-                <img src="img/Phonedex%20Logo.png" alt="Phonedex Logo">
+                <a href="index.html"><img src="img/Phonedex%20Logo.png" alt="Phonedex Logo"></a>
             </div>
             <div class="small-2 small-offset-1 large-1 large-offset-5 columns" id="search-nav-tab"><a href="#" class="a-fill-div">search &nbsp;&nbsp;<i class="fa fa-search"></i></a></div>
             <div class="small-2 large-1 columns" id="login-nav-tab"><a href="#" class="a-fill-div">login &nbsp;&nbsp;<i class="fa fa-user"></i></a></div>
@@ -48,7 +50,7 @@
                             <a class="a-fill-div darken" href="#" data-dropdown="reviews-drop" data-options="align:bottom" aria-controls="reviews-drop" aria-expanded="false">*Reviews <i class="fa fa-caret-down"></i></a>
                         </div>
                         <div class="small-3 columns" id="nav-link-3">
-                            <a class="a-fill-div" href="wizard.html">*Wizard</a>
+                            <a class="a-fill-div" href="subpages/wizard.html">*Wizard</a>
                         </div>
                         <div class="small-3 columns" id="nav-link-4">
                             <a class="a-fill-div" href="#">Forums</a>
@@ -177,16 +179,125 @@
         <div class="row">
             <div class="tabs-content">
                 <div class="content active" id="panel1">
-                    asdf
+                    <div class="News1">
+                    </div>
                 </div>
+
                 <div class="content" id="panel2">
-                    zxcv
+                    <!-- Carousel -->
+                    <div class="row">
+                        <div class="large-12 columns home-carousel">
+                            <div class="owl-item">
+                                    <a href="http://www.theverge.com/2014/10/3/6887063/sony-xperia-z3-and-z3-compact-review">
+                                        <img src="img/carousel-xperia.jpg" class="pony1"/> 
+                                        <div class="black-box noIbar">
+                                            <span class="index-large-title">
+                                                Sony Xperia Z3 and Z3 Compact Comparison : 
+                                            </span>
+                                            <span class="index-subtitle">
+                                                Representing the most direct counterpart to Apple's iPhone
+                                            </span>
+                                        </div>
+                                        
+                                    </a>
+                            </div>
+
+                            <div class="owl-item">
+                                <a href="http://www.theverge.com/2014/9/8/6121143/motorola-moto-x-2014-new-review">
+                                    <img src="img/carousel-motorola.jpg" class="pony1">
+                                    <div class="black-box noIbar">
+                                        <span class="index-large-title">
+                                            Motorola Moto X : 
+                                        </span>
+                                        <span class="index-subtitle">
+                                            Never before done customization for each person
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="owl-item">
+                                <a href="http://www.theverge.com/2014/7/22/5923697/amazon-fire-phone-review">
+                                    <img src="img/carousel-amazon.jpg" class="pony1">
+                                    <div class="black-box noIbar">
+                                        <span class="index-large-title">
+                                            Amazon Fire Phone : 
+                                        </span>
+                                        <span class="index-subtitle">
+                                            The first smartphone with Dynamic Perspective
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Carousel -->
+                   
+                    <!--
+                    <div class="row hide">
+                        <div class="small-10 columns" id="image1">
+                            <a href="http://www.theverge.com/2014/11/12/7200705/nexus-6-review"><img src= "img/nexus.jpg" alt="nexus"/>
+                                <h2 id="box1"><span class="large-title">Nexus 6 Review:
+                                    <span class="tiny large-title">Taller, Wider, and Thicker than either the iPhone 6 and Samsung Galaxy Note</span></span>
+                                </h2>
+                            </a>
+                         </div>
+
+
+                         <div class="small-1 columns">
+                            <a href= "http://www.theverge.com/2014/10/27/7077139/galaxy-note-edge-review"><img id="image2" src="img/galaxynote.jpg" alt="samsung"/>
+                                <h2 id="box2"><span class="tiny">Samsung Galaxy Note Edge</span></h2></a>
+                         </div>
+
+
+                         <div class="small-1 columns">
+                            <a href= "http://www.theverge.com/2014/10/27/7077139/galaxy-note-edge-review"><img id="image3" src="img/galaxynote.jpg" alt="samsung"/>
+                                <h2 id="pony3"><span>Samsung Galaxy Note Edge</span></h2></a>
+                         </div>
+
+                    </div>
+                    -->
+                    <!-- Under Carousel -->
+                    <div class="row">
+                        
+                        <div class="small-7 columns">
+                            <img src="img/nexus.jpg" alt="Nexus">
+                            <div class="black-box noIbar" id="black-box-nexus6">
+                                <span class="index-large-title">
+                                    Nexus 6 Review : 
+                                </span>
+                                <span class="index-subtitle">
+                                    Taller, Wider, and Thicker than either the iPhone 6 and Samsung Galaxy Note
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="small-5 columns" id="index-two-stack">
+                            <img src="img/index_windows_phone.jpg" alt="Windows Phone">
+                            <div class="black-box-tiny noIbar" id="black-box-windows">
+                                <span class="index-large-title">
+                                    Windows Phones : 
+                                </span>
+                                <span class="index-subtitle">
+                                    Still relevant?
+                                </span>
+                            </div>
+                            <img src="img/index_galaxynote.jpg" alt="Galaxy Note">
+                            <div class="black-box-tiny noIbar" id="black-box-edge">
+                                <span class="index-large-title">
+                                    Note Edge : 
+                                </span>
+                                <span class="index-subtitle">
+                                    Better watch that edge!
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Under Carousel -->
                 </div>
+
                 <div class="content" id="panel3">
                     qwr
-                </div>
-                <div class="content" id="panel4">
-                    tyu
                 </div>
             </div>
         </div>
@@ -274,6 +385,15 @@
             direction: 'down',
             speed: 50,
             duration: 4500
+        });
+        
+        $(document).ready(function() {
+ 
+          $(".home-carousel").owlCarousel({
+            singleItem: true,
+            autoPlay: 3500,
+            autoHeight: true
+          });
         });
         
         $(document).foundation();

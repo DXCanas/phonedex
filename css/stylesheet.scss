@@ -323,10 +323,11 @@ body {
     box-shadow: $box-shadow;
     border: $border-default;
     
-    
-    .rating{
-        text-align: center;
-        font-size:200%;  
+    h4{
+        .rating{
+            text-align: center;
+            font-size: 80px;  
+        }
     }
     
     /**Android body**/

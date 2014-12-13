@@ -52,7 +52,9 @@ $box-shadow: 4px 4px 1px $subtle-grey;
 $border-default: 1px solid $hartwig-5;
 
 body {
-    background-image: url('../img/subtle_patterns/cream_pixels.png');   
+    
+    background-image: url('../img/subtle_patterns/cream_pixels.png');
+    overflow-x: hidden;
 }
 
 /**
@@ -293,7 +295,6 @@ body {
     #reviews-drop {
         
         max-width: 750px;
-        box-shadow: $box-shadow;
     }
 } // END Nav-bar
 
@@ -342,20 +343,9 @@ body {
     box-shadow: $box-shadow;
     border: $border-default;
     
-    .rating{
-        font-size: 15em;
-        text-align: center;
-    }
-    
-    .moverating{
-        font-size: 400%;   
-    }
-    
-    h4{
-        .rating{
-            text-align: center;
-            font-size: 80px;  
-        }
+    dt {
+        
+        margin-bottom: 0px;   
     }
     
     /**Android body**/
@@ -433,25 +423,26 @@ body {
         height: 50px;
     }
     
-    #black-box-nexus6 {
+    .black-box-nexus6 {
         
+        @extend .black-box;
         top: 251px;
         left: 15px;
     }
     
-    #black-box-windows {
+    .black-box-windows {
         
         left: 15px;
         top: 115px;
     }
     
-    #black-box-edge {
+    .black-box-edge {
         
         left: 15px;
         top: 300px;
     }
     
-    #index-two-stack {
+    .index-two-stack {
                 
         img {
             
@@ -490,7 +481,7 @@ body {
         }
     }
     
-// wizard.html Specific
+    // wizard.html Specific
     .slider-title {
         
         margin-bottom: 0.5em;
@@ -539,8 +530,8 @@ body {
         margin-right: 5px;
         font-family: $font-Yanone;
     }
-// END wizard.html Specific
-// wizard-result.html Specific
+    // END wizard.html Specific
+    // wizard-result.html Specific
     .wizard-result-row {
         
         .panel {
@@ -560,8 +551,71 @@ body {
             font-size: 150%;
         }
     }
+    // END wizard-result.html Specific
     
-// END wizard-result.html Specific
+    // Reviews specific
+    .rating{
+        
+        @extend .vertical-align;
+        
+        font-size: 15em;
+        text-align: center;
+    }
+    
+    .moverating{
+        
+        position: relative;
+        top: 70px;
+        font-size: 400%;
+        cursor: pointer;
+    }
+    
+    h4{
+        
+        .rating{
+            text-align: center;
+            font-size: 80px;  
+        }
+    }
+    
+    h3 {
+        
+        font-family: $font-Yanone;   
+    }
+    
+    .pricing-table {
+        
+        .title {
+            
+            font-family: $font-Yanone;
+        }
+    }
+    
+    #review-verdict {
+        
+        font-size: 300%;
+    }
+    
+    p {
+        
+        text-align: justify;
+    }
+    
+    .comment {
+        
+        hr {
+            
+            margin-left: 80px;   
+            margin-right: 90px;
+        }
+    }
+    
+    .comment-input {
+        
+        margin-bottom: 20px;   
+    }
+    
+    // End Reviews specific
     
 } // END Home Page Body
 
@@ -572,7 +626,6 @@ body {
     
     margin-top: -1px;
     margin-bottom: 30px;
-    border: $border-default;
     box-shadow: $box-shadow;
     background-color: $hartwig-5;
     padding: 5px 0px 5px 5px;
@@ -618,13 +671,15 @@ body {
     
 } // END Footer
 
-// Styles first letter all h2's (logo title)
-h2::first-letter {
-    
-}
-
 
 // When mouse hovers over the text, the cursor doesn't change.
+.vertical-align {
+    
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .noIbar {
     cursor:default;
 }

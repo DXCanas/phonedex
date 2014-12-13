@@ -1,7 +1,7 @@
 /**
 * Variables
 **/
-body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
+body { background-image: url("../img/subtle_patterns/cream_pixels.png"); overflow-x: hidden; }
 
 /**
 * Nav-bar
@@ -55,7 +55,7 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #nav .drop .panel:hover { background-color: #E0E0E0; }
 #nav .drop .panel:hover img { opacity: 0.7; }
 #nav .drop .panel:hover hr { border-color: black; }
-#nav #reviews-drop { max-width: 750px; box-shadow: 4px 4px 1px #999999; }
+#nav #reviews-drop { max-width: 750px; }
 
 /**
 * Home Page Body
@@ -69,9 +69,7 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 .img-border img { border: 1px solid #999999; }
 
 #index-body { min-height: 800px; background-color: white; box-shadow: 4px 4px 1px #999999; border: 1px solid #333333; /**Android body**/ }
-#index-body .rating { font-size: 15em; text-align: center; }
-#index-body .moverating { font-size: 400%; }
-#index-body h4 .rating { text-align: center; font-size: 80px; }
+#index-body dt { margin-bottom: 0px; }
 #index-body .pony1 { height: 450px; width: 100%; }
 #index-body #image1 { position: relative; width: 65%; border: .14px gray solid; padding: 5px; }
 #index-body #box1 { top: 280px; }
@@ -81,12 +79,12 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #index-body #pony2 { position: absolute; top: 100px; left: 15px; width: 90%; background: rgba(0, 0, 0, 0.7); }
 #index-body #image3 { padding-right: 50px; }
 #index-body .tiny { font-size: 30px; }
-#index-body .black-box, #index-body .black-box-tiny { position: absolute; top: 330px; left: 1px; width: 90%; height: 100px; background: rgba(0, 0, 0, 0.7); padding-left: 10px; color: white; letter-spacing: -1px; cursor: pointer; pointer-events: none; }
+#index-body .black-box, #index-body .black-box-tiny, #index-body .black-box-nexus6 { position: absolute; top: 330px; left: 1px; width: 90%; height: 100px; background: rgba(0, 0, 0, 0.7); padding-left: 10px; color: white; letter-spacing: -1px; cursor: pointer; pointer-events: none; }
 #index-body .black-box-tiny { height: 50px; }
-#index-body #black-box-nexus6 { top: 251px; left: 15px; }
-#index-body #black-box-windows { left: 15px; top: 115px; }
-#index-body #black-box-edge { left: 15px; top: 300px; }
-#index-body #index-two-stack img { margin-bottom: 11px; }
+#index-body .black-box-nexus6 { top: 251px; left: 15px; }
+#index-body .black-box-windows { left: 15px; top: 115px; }
+#index-body .black-box-edge { left: 15px; top: 300px; }
+#index-body .index-two-stack img { margin-bottom: 11px; }
 #index-body .index-large-title { font-size: 200%; }
 #index-body .index-subtitle { font-size: 180%; }
 #index-body h2 span { color: white; letter-spacing: -1px; /*fallback color*/ padding: 10px; }
@@ -105,11 +103,20 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #index-body .wizard-result-row .title { font-family: "Yanone Kaffeesatz", sans-serif; }
 #index-body .wizard-result-row img { margin-top: 20px; }
 #index-body .wizard-result-row .wizard-result-phone-title { font-size: 150%; }
+#index-body .rating { font-size: 15em; text-align: center; }
+#index-body .moverating { position: relative; top: 70px; font-size: 400%; cursor: pointer; }
+#index-body h4 .rating { text-align: center; font-size: 80px; }
+#index-body h3 { font-family: "Yanone Kaffeesatz", sans-serif; }
+#index-body .pricing-table .title { font-family: "Yanone Kaffeesatz", sans-serif; }
+#index-body #review-verdict { font-size: 300%; }
+#index-body p { text-align: justify; }
+#index-body .comment hr { margin-left: 80px; margin-right: 90px; }
+#index-body .comment-input { margin-bottom: 20px; }
 
 /**
 * Footer
 **/
-#footer { margin-top: -1px; margin-bottom: 30px; border: 1px solid #333333; box-shadow: 4px 4px 1px #999999; background-color: #333333; padding: 5px 0px 5px 5px; }
+#footer { margin-top: -1px; margin-bottom: 30px; box-shadow: 4px 4px 1px #999999; background-color: #333333; padding: 5px 0px 5px 5px; }
 #footer #back-to-top { background-color: #83BF17; }
 #footer #back-to-top a { color: white; padding: 5px 0px 5px 0px; }
 #footer #back-to-top:hover { background-color: #A2E524; }
@@ -118,6 +125,8 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #footer .footer-links { font-family: "Yanone Kaffeesatz", sans-serif; }
 #footer .footer-links a { color: grey; }
 #footer .footer-links a:hover { color: white; }
+
+.vertical-align, #index-body .rating { position: relative; top: 50%; transform: translateY(-50%); }
 
 .noIbar, #footer .footer-title, #footer #footer-logo { cursor: default; }
 

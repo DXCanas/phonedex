@@ -323,6 +323,15 @@ body {
     box-shadow: $box-shadow;
     border: $border-default;
     
+    .rating{
+        font-size: 15em;
+        text-align: center;
+    }
+    
+    .moverating{
+        font-size: 400%;   
+    }
+    
     h4{
         .rating{
             text-align: center;

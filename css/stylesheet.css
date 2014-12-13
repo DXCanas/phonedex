@@ -67,12 +67,16 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #body-subtitle h4 { color: white; font-family: "Yanone Kaffeesatz", sans-serif; }
 
 #index-body { min-height: 800px; background-color: white; box-shadow: 4px 4px 1px #999999; border: 1px solid #333333; /**Android body**/ }
+#index-body .rating { font-size: 15em; text-align: center; }
+#index-body .moverating { font-size: 400%; }
+#index-body h4 .rating { text-align: center; font-size: 80px; }
 #index-body .pony1 { height: 450px; width: 100%; }
 #index-body #image1 { position: relative; width: 65%; border: .14px gray solid; padding: 5px; }
 #index-body #box1 { top: 280px; }
 #index-body #box2 { height: 50px; }
 #index-body img { border: 1px solid #999999; }
 #index-body img:hover { opacity: 0.9; }
+#index-body .noHover:hover { opacity: 1; }
 #index-body #pony2 { position: absolute; top: 100px; left: 15px; width: 90%; background: rgba(0, 0, 0, 0.7); }
 #index-body #image3 { padding-right: 50px; }
 #index-body .tiny { font-size: 30px; }

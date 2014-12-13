@@ -3305,6 +3305,8 @@ meta.foundation-mq-topbar {
       /*font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;*/
 	  font-family: "Yanone Kaffeesatz", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1.2rem; }
+	  
+	  /* All News */
       .tabs dd > a:hover, .tabs .tab-title > a:hover {
         background-color: #97DB1A; }
 		
@@ -3315,7 +3317,7 @@ meta.foundation-mq-topbar {
 	    background-color: #0B99BC; }
 		
     .tabs dd.active a, .tabs .tab-title.active a {
-      background-color: #83BF17; }
+      background-color: #FF4444; }
 	  
 	/* android and ios tabs active */
 	.tabs dd.active #tab-android, .tabs .tab-title.active #tab-android {
@@ -3323,8 +3325,9 @@ meta.foundation-mq-topbar {
 	.tabs dd.active #tab-ios, .tabs .tab-title.active #tab-ios {
       background-color: #0B99BC; }
 	  
+	/* All News Hover */
 	.tabs dd.active a:hover, .tabs .tab-title.active a:hover {
-		background-color: #A2E524; }
+		background-color: #E00000; }
 		
 	/* android and ios tabs hover*/
 	.tabs dd.active #tab-android:hover, .tabs .tab-title.active #tab-android:hover {

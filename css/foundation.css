@@ -3308,13 +3308,13 @@ meta.foundation-mq-topbar {
 	  
 	  /* All News Hover */
       .tabs dd > a:hover, .tabs .tab-title > a:hover {
-        background-color: #E00000; }
+        background-color: #FF4444; }
 		
 	/* android and ios tabs hover inactive */
 	  .tabs dd #tab-android:hover, .tabs .tab-title #tab-android:hover {
-	    background-color: #7AA300; }
+	    background-color: #99CC00; }
 	  .tabs dd #tab-ios:hover, .tabs .tab-title #tab-ios:hover {
-	    background-color: #78787D; }
+	    background-color: #8E8E93; }
 		
     .tabs dd.active a, .tabs .tab-title.active a {
       background-color: #FF4444; }
@@ -3329,7 +3329,7 @@ meta.foundation-mq-topbar {
 	.tabs dd.active a:hover, .tabs .tab-title.active a:hover {
 		background-color: #E00000; }
 		
-	/* android and ios tabs hover*/
+	/* android and ios tabs Hover active*/
 	.tabs dd.active #tab-android:hover, .tabs .tab-title.active #tab-android:hover {
 		background-color: #7AA300; }
 	.tabs dd.active #tab-ios:hover, .tabs .tab-title.active #tab-ios:hover {

@@ -477,6 +477,10 @@ body {
     // more .tabs css are implemented in foundation.css
     .tabs {
         
+        i {
+            font-size: 110%;
+        }
+        
         dd {
             padding: 0;
         }

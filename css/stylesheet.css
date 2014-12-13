@@ -89,6 +89,7 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #index-body .index-large-title { font-size: 200%; }
 #index-body .index-subtitle { font-size: 180%; }
 #index-body h2 span { color: white; letter-spacing: -1px; /*fallback color*/ padding: 10px; }
+#index-body .tabs i { font-size: 110%; }
 #index-body .tabs dd { padding: 0; }
 #index-body .slider-title { margin-bottom: 0.5em; font-size: 200%; background-color: #333333; color: white; }
 #index-body .slider-icons { font-size: 175%; }

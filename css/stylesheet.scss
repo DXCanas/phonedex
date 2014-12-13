@@ -323,6 +323,12 @@ body {
     box-shadow: $box-shadow;
     border: $border-default;
     
+    
+    .rating{
+        text-align: center;
+        font-size:200%;  
+    }
+    
     /**Android body**/
     .pony1 {
         
@@ -596,6 +602,7 @@ body {
 h2::first-letter {
     
 }
+
 
 // When mouse hovers over the text, the cursor doesn't change.
 .noIbar {

@@ -221,8 +221,6 @@ body {
     
     .drop {
         
-        box-shadow: $box-shadow;
-        
         .dropdown-all {
             
             background-color: $color-question;
@@ -275,6 +273,19 @@ body {
             
             img {
                 margin-bottom: 5px;   
+            }
+        }
+        
+        .panel:hover {
+            
+            background-color: #E0E0E0;
+            
+            img {
+                opacity: 0.7;   
+            }
+            
+            hr {
+                border-color: black;   
             }
         }
     }
@@ -346,10 +357,6 @@ body {
     #box2 {
         
       height:50px;
-    }
-    
-    #image2 {
-
     }
     
     img:hover {
@@ -434,11 +441,6 @@ body {
     
     .index-subtitle {
         font-size: 180%;
-    }
-    
-    h2  {
-        
-        
     }
 
     h2 span {

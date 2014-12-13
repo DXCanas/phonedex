@@ -37,7 +37,6 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #nav #nav-links #nav-link-4:hover a { color: white; }
 #nav #nav-trending { box-shadow: 4px 4px 1px #999999; border: 1px solid #333333; background-color: white; min-height: 26px; }
 #nav #nav-trending ul { margin: 0; padding: 0; list-style: none; }
-#nav .drop { box-shadow: 4px 4px 1px #999999; }
 #nav .drop .dropdown-all { background-color: #FF4444; }
 #nav .drop .dropdown-all a { color: white; padding: 5px 0px 5px 0px; font-size: 120%; }
 #nav .drop .dropdown-all:hover { background-color: #E00000; }
@@ -53,6 +52,9 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #nav .drop .panel { padding-left: 15px; padding-right: 15px; }
 #nav .drop .panel hr { margin-top: 5px; margin-bottom: 10px; }
 #nav .drop .panel img { margin-bottom: 5px; }
+#nav .drop .panel:hover { background-color: #E0E0E0; }
+#nav .drop .panel:hover img { opacity: 0.7; }
+#nav .drop .panel:hover hr { border-color: black; }
 #nav #reviews-drop { max-width: 750px; box-shadow: 4px 4px 1px #999999; }
 
 /**

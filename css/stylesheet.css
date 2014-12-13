@@ -82,7 +82,7 @@ body { background-image: url("../img/subtle_patterns/cream_pixels.png"); }
 #index-body #pony2 { position: absolute; top: 100px; left: 15px; width: 90%; background: rgba(0, 0, 0, 0.7); }
 #index-body #image3 { padding-right: 50px; }
 #index-body .tiny { font-size: 30px; }
-#index-body .black-box, #index-body .black-box-tiny { position: absolute; top: 330px; left: 1px; width: 90%; height: 100px; background: rgba(0, 0, 0, 0.7); padding-left: 10px; color: white; letter-spacing: -1px; cursor: pointer; }
+#index-body .black-box, #index-body .black-box-tiny { position: absolute; top: 330px; left: 1px; width: 90%; height: 100px; background: rgba(0, 0, 0, 0.7); padding-left: 10px; color: white; letter-spacing: -1px; cursor: pointer; pointer-events: none; }
 #index-body .black-box-tiny { height: 50px; }
 #index-body #black-box-nexus6 { top: 251px; left: 15px; }
 #index-body #black-box-windows { left: 15px; top: 115px; }

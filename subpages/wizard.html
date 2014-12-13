@@ -218,10 +218,16 @@
         <!-- Budget -->
         <div class="row">
             <div class="small-12 columns text-center slider-title">
-                What is your budget?
+                How much are you willing to spend? ($)
             </div>
         </div>
-        
+        <div class="row">
+            <div class="small-7 small-centered columns text-center slider-info">
+                <span class="left noIbar">Budget</span>
+                <span class="center noIbar">Good</span>
+                <span class="right noIbar">Flagship</span>
+            </div>
+        </div>
         <div class="row">
             <div class="small-8 small-centered columns slider-showcase">
                 <div id="budget-slider"></div>
@@ -336,7 +342,7 @@
         var DEFAULT_BLACK = "#222222";
         var COLOR_YES = "#99CC00";
         var COLOR_NO  = "#FF4444";
-        var COLOR_DONT_CARE = "#78787D";
+        var COLOR_DONT_CARE = "#8E8E93";
         
         $('.newsticker').newsTicker({
             row_height: 8,
@@ -465,15 +471,15 @@
         
     // Budget Slider
         $("#budget-slider").noUiSlider({
-            start: [ 0, 1000 ],
+            start: [ 200, 600 ],
             step: 100,
-            margin: 1,
+            margin: 100,
             orientation: 'horizontal',
             
             connect: true,
             range: {
               'min': 0,
-              'max': 1000
+              'max': 800
             }
         });
         $("#budget-slider").noUiSlider_pips({

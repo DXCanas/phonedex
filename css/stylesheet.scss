@@ -327,6 +327,14 @@ body {
     }
 }
 
+.img-border {
+        
+    img {
+        
+        border: 1px solid $subtle-grey;
+    }
+}
+
 #index-body {
     
     min-height: 800px;
@@ -373,11 +381,6 @@ body {
     #box2 {
         
       height:50px;
-    }
-    
-    img {
-        
-        border: 1px solid $subtle-grey;
     }
     
     img:hover {

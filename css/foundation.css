@@ -3306,34 +3306,34 @@ meta.foundation-mq-topbar {
 	  font-family: "Yanone Kaffeesatz", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1.2rem; }
 	  
-	  /* All News */
+	  /* All News Hover */
       .tabs dd > a:hover, .tabs .tab-title > a:hover {
-        background-color: #97DB1A; }
+        background-color: #E00000; }
 		
 	/* android and ios tabs hover inactive */
 	  .tabs dd #tab-android:hover, .tabs .tab-title #tab-android:hover {
-	    background-color: #CD1719; }
+	    background-color: #7AA300; }
 	  .tabs dd #tab-ios:hover, .tabs .tab-title #tab-ios:hover {
-	    background-color: #0B99BC; }
+	    background-color: #78787D; }
 		
     .tabs dd.active a, .tabs .tab-title.active a {
       background-color: #FF4444; }
 	  
 	/* android and ios tabs active */
 	.tabs dd.active #tab-android, .tabs .tab-title.active #tab-android {
-      background-color: #CD1719; }
+      background-color: #99CC00; }
 	.tabs dd.active #tab-ios, .tabs .tab-title.active #tab-ios {
-      background-color: #0B99BC; }
+      background-color: #8E8E93; }
 	  
-	/* All News Hover */
+	/* All News Hover active */
 	.tabs dd.active a:hover, .tabs .tab-title.active a:hover {
 		background-color: #E00000; }
 		
 	/* android and ios tabs hover*/
 	.tabs dd.active #tab-android:hover, .tabs .tab-title.active #tab-android:hover {
-		background-color: #E72326; }
+		background-color: #7AA300; }
 	.tabs dd.active #tab-ios:hover, .tabs .tab-title.active #tab-ios:hover {
-		background-color: #0DBCE7; }
+		background-color: #78787D; }
 	
   .tabs.radius dd:first-child a, .tabs.radius .tab:first-child a {
     -webkit-border-bottom-left-radius: 3px;

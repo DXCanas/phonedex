@@ -1,4 +1,3 @@
-187a_group2_final
------------------
+Authors: Peter Yao, Jen Nguyen, David Canas
 
-Group 2: Peter Yao, Jen Nguyen, David Canas
+Follow the '*' for pages that are implemented.
